@@ -61,7 +61,8 @@ It must be conditionally compliant with the rfc 7230 to 7235 (http 1.1) but you 
 - [ ] Transfer-Encoding
 - [ ] User-Agent
 - [ ] WWW-Authenticate
-- [ ] We will consider that nginx is HTTP 1.1 compliant and may be used to compare headers and answer behaviors
+
+We will consider that nginx is HTTP 1.1 compliant and may be used to compare headers and answer behaviors
 - [ ] It must be non-blocking and use only 1 select for all the IO between the client and the server (listens includes).
 - [ ] Select should check read and write at the same time.
 - [ ] Your server should never block and client should be bounce properly if necessary
@@ -74,6 +75,7 @@ It must be conditionally compliant with the rfc 7230 to 7235 (http 1.1) but you 
 - [ ] You can include and use everything in "iostream" "string" "vector" "list" "queue" "stack" "map" "algorithm"
 - [ ] Your program should have a config file in argument or use a default path
 - [ ] You can only use fcntl as flow: fcntl(fd, F_SETFL, O_NONBLOCK); Any other flags is forbidden
+
 In the config file, you should be able to :
 - [ ] choose the port and host of each "server"
 - [ ] setup the server_names or not
@@ -81,6 +83,7 @@ In the config file, you should be able to :
 - [ ] setup default error pages
 - [ ] limit client body size
 - [ ] setup routes with one or multiple of the following rules/configuration (routes won't be using regexp):
+
 ## Bonus part
 
 ## Dependencies  
